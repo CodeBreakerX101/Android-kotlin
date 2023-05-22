@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.example.filemanager.MainActivity"
+    >
+
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/compress"
+        android:title="@string/compress"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/copy_also"
+        android:title="@string/copy_also"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/cut_also"
+        android:title="@string/cut_also"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@string/rename"
+        android:title="@string/rename"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@string/details"
+        android:title="@string/details"
+        app:showAsAction="never"
+        />
+
+
+
+</menu>

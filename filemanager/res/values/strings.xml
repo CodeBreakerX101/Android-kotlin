@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">File Manager</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="same_file_present">file with same name already present</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="open">Open</string>
+    <string name="share">Share</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="details">Details</string>
+    <string name="copy">Copy</string>
+    <string name="cut">Cut</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="select_all">Select All</string>
+    <string name="paste">paste</string>
+    <string name="vertical_ellipsis">&#8942;</string>
+
+
+    <string name="docx">application/vnd.openxmlformats-officedocument.wordprocessingml.document</string>
+
+    <string name="ppt">application/vnd.ms-powerpoint</string>
+    <string name="pot">application/vnd.ms-powerpoint</string>
+    <string name="pps">application/vnd.ms-powerpoint</string>
+    <string name="ppa">application/vnd.ms-powerpoint</string>
+    <string name="options">options</string>
+    <string name="copy_also">copy also</string>
+    <string name="cut_also">cut also</string>
+    <string name="compress">compress</string>
+    <string name="cancel">Cancel</string>
+    <string name="replace">Replace</string>
+
+    <string name="internalstorage">Internal storage</string>
+    <string name="name">Name</string>
+    <string name="size">Size</string>
+    <string name="date">Date</string>
+
+
+</resources>

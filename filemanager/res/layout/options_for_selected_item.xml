@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/options_constraint_as_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/options_linearLayoutImg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/paste_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:clickable="false"
+            android:alpha="0.4"
+            android:layout_weight="1"
+            android:src="@drawable/paste"
+            />
+
+        <ImageView
+            android:id="@+id/cut_img"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/cut" />
+        <ImageView
+            android:id="@+id/copy_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/copy"
+            />
+
+        <ImageView
+            android:id="@+id/delete_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/delete"
+            />
+
+        <ImageView
+            android:id="@+id/options_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/options"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/options_linearLayoutText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:id="@+id/paste_textView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/paste"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:alpha="0.4"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="15dp"
+            />
+
+        <TextView
+            android:id="@+id/cut_textView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/cut"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="15dp"
+            />
+        <TextView
+            android:id="@+id/copy_textView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/copy"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="15dp"
+            />
+        <TextView
+            android:id="@+id/delete_textView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/delete"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="15dp"
+            />
+        <TextView
+            android:id="@+id/options_textView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/options"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/pasteArrow_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/ic_arrow_up_24"
+            />
+        <ImageView
+            android:id="@+id/cutArrow_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/ic_arrow_up_24"
+
+            />
+
+        <ImageView
+            android:id="@+id/copyArrow_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:src="@drawable/ic_arrow_up_24"
+
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+
+            />
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="start"
+            android:layout_weight="1"
+
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/duplicateItemParent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/duplicateItemChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        
+        <TextView
+            android:id="@+id/duplicateNoticeText"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/same_file_present"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:lines="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/duplicateNoticeText"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/showDuplicateFiles_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/fileName"
+            app:layout_constraintBottom_toTopOf="@id/replace_textViewForDuplicate"
+            />
+
+        <TextView
+            android:id="@+id/replace_textViewForDuplicate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/replace"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:background="#21CC28"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/showDuplicateFiles_recyclerView"
+            />
+        <TextView
+            android:id="@+id/delete_textViewForDuplicate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:alpha="0.4"
+            android:clickable="false"
+            android:text="@string/delete"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:background="#F60A0A"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/replace_textViewForDuplicate"
+            />
+        <TextView
+            android:id="@+id/cancel_textViewForDuplicate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/cancel"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:background="#2196F3"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/delete_textViewForDuplicate"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
